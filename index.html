@@ -9,44 +9,50 @@
 <body>
 
 <header>
-    <h1>Your Name</h1>
-    <p>Machine Learning Engineer | RAG Systems | Reinforcement Learning</p>
+    <div class="header-top">
+        <h1>Your Name</h1>
+        <button id="theme-toggle">Toggle Theme</button>
+    </div>
+
+    <p class="subtitle">Machine Learning Engineer | RAG Systems | Reinforcement Learning</p>
+
     <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="blog.html">Blog</a>
-        <a href="resume.pdf" target="_blank">Resume</a>
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a class="nav-btn" href="index.html">Home</a>
+        <a class="nav-btn" href="projects.html">Projects</a>
+        <a class="nav-btn" href="progress.html">Progress</a>
+        <a class="nav-btn" href="results.html">Results</a>
+        <a class="nav-btn" href="blog.html">Blog</a>
+        <a class="nav-btn" href="resume.pdf" target="_blank">Resume</a>
     </nav>
 </header>
 
 <section>
     <h2>About</h2>
     <p>
-        I build production-oriented machine learning systems with a focus on 
-        retrieval-augmented generation, evaluation frameworks, and reinforcement learning.
+        I design and evaluate machine learning systems with a focus on 
+        retrieval-augmented generation, evaluation frameworks, and regret minimization algorithms.
+        Emphasis on reproducibility, metrics-driven iteration, and system design.
     </p>
 </section>
 
 <section>
-    <h2>Featured Projects</h2>
+    <h2>Featured Work</h2>
 
     <div class="card">
         <h3>Medical RAG System</h3>
-        <p>Hybrid sparse+dense retrieval with evaluation framework (Recall@k, Faithfulness).</p>
-        <a href="projects.html">View Details →</a>
+        <p>Hybrid retrieval + evaluation pipeline targeting latency reduction and recall optimization.</p>
     </div>
 
     <div class="card">
         <h3>Transformer-based Deep CFR</h3>
-        <p>Replaced MLP regret network with Transformer architecture for poker.</p>
-        <a href="projects.html">View Details →</a>
+        <p>Architecture redesign for regret network stability and improved convergence.</p>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 Your Name</p>
+    © 2026 Your Name
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
