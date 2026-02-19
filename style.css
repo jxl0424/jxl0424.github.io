@@ -1,49 +1,96 @@
+:root {
+    --bg: #f5f7fa;
+    --text: #1a1a1a;
+    --card: #ffffff;
+    --accent: #0077ff;
+}
+
+body.dark {
+    --bg: #0f172a;
+    --text: #e2e8f0;
+    --card: #1e293b;
+    --accent: #38bdf8;
+}
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     margin: 0;
-    background: #f9f9f9;
-    color: #222;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s ease;
 }
 
 header {
-    background: #111;
-    color: white;
     padding: 2rem;
     text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
-nav a {
-    margin: 0 1rem;
-    color: #ccc;
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtitle {
+    opacity: 0.7;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+.nav-btn {
+    margin: 0.3rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--accent);
+    border-radius: 6px;
     text-decoration: none;
+    color: var(--accent);
+    font-weight: 500;
 }
 
-nav a:hover {
+.nav-btn:hover {
+    background: var(--accent);
     color: white;
 }
 
 section {
-    max-width: 800px;
+    max-width: 900px;
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 1rem;
 }
 
 .card {
-    background: white;
+    background: var(--card);
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
-.card h2, .card h3 {
-    margin-top: 0;
+.link-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.4rem 0.8rem;
+    background: var(--accent);
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.7rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 footer {
     text-align: center;
-    padding: 1rem;
-    margin-top: 3rem;
-    font-size: 0.9rem;
-    color: #666;
+    padding: 2rem;
+    opacity: 0.6;
 }
